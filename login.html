@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Masters - Sign In</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #535557; /* Light background color */
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Full height for the page */
+    }
+
+    /* Maroon navbar with reduced size */
+    .navbar {
+      padding: 0.3rem 1rem; /* Reduced padding */
+      font-size: 0.8rem; /* Smaller font size */
+      background-color: #800000; /* Maroon color */
+    }
+
+    .navbar .navbar-brand img {
+      height: 20px; /* Smaller logo */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      padding: 0.3rem 0.8rem; /* Reduced the padding on links */
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; /* Full height of the page */
+    }
+
+    .card {
+      width: 100%;
+      max-width: 350px; /* Make card narrower to fit on screen */
+      border-radius: 10px;
+      background-color: #535557; /* Set background color to grey */
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+    .form-check-label {
+      font-size: 0.9rem;
+    }
+
+    .form-check a {
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .form-check a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-block {
+      width: 100%;
+    }
+
+    /* Ensure card is centered on screen */
+    .card-body {
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="hdhdj.jpg" alt="Frontend Masters" height="20">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Learn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Join Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Form -->
+  <div class="container">
+    <div class="card shadow-lg p-4">
+      <div class="card-body">
+        <h3 class="card-title text-center mb-4">Sign in to your account</h3>
+        <form>
+          <!-- Username or Email -->
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username or Email" required>
+          </div>
+          <!-- Password -->
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" required>
+          </div>
+          <!-- Remember Me and Forgot Password -->
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember Me</label>
+            <a href="#" class="float-right text-primary">Forgot your password?</a>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-block">Continue</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
